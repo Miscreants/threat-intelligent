@@ -1,0 +1,12 @@
+{
+    "author": "Miscreants",
+    "name": "Threat Intelligent",
+    "version": "0.1",
+    "manifest_version": 2,
+    "minimum_chrome_version": "29",
+    "description": "It's like Tabby Cat, but for APT's",
+    "permissions" : ["management"],
+    "chrome_url_overrides" : {
+        "newtab": "src/index.html"
+    }
+}
