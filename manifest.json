@@ -1,11 +1,10 @@
 {
     "author": "Miscreants",
     "name": "Threat Intelligent",
-    "version": "0.1",
+    "version": "1.0.1",
     "manifest_version": 2,
     "minimum_chrome_version": "29",
-    "description": "It's like Tabby Cat, but for APT's",
-    "permissions" : ["management"],
+    "description": "A browser extension that shows you a different APT on every new tab!",
     "chrome_url_overrides" : {
         "newtab": "src/index.html"
     }
