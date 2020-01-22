@@ -1,10 +1,14 @@
 {
     "author": "Miscreants",
     "name": "Threat Intelligent",
+    "short_name": "Threat Intel",
     "version": "1.0.1",
     "manifest_version": 2,
     "minimum_chrome_version": "29",
     "description": "A browser extension that shows you a different APT on every new tab!",
+    "icons": {
+        "128": "icon_128.png"
+    },
     "chrome_url_overrides" : {
         "newtab": "src/index.html"
     }
