@@ -6,7 +6,7 @@ html {
 	color: #222;
 	font-size: 18px;
 	line-height: 1.5;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -195,7 +195,7 @@ a:hover {
 
 .apt-container {
 	width: 100vw;
-	height: 90vh;
+	min-height: 90vh;
 	display: flex;
 	justify-content: center;
 	padding-top: 10vh;
@@ -210,7 +210,7 @@ a:hover {
 .menu {
 	position: absolute;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
@@ -396,7 +396,7 @@ a:hover {
 	z-index: 0;
 	height: 110vh;
 	width: 110vw;
-	background: url(/src/assets/light-ray.svg) no-repeat;
+	background: url(/assets/light-ray.svg) no-repeat;
 	opacity: 50%;
 	background-position: 25% 25%;
 	background-size: cover;
