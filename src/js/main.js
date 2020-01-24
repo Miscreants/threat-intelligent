@@ -3,14 +3,8 @@ $('#toggle').click(function() {
     $('#overlay').toggleClass('open');
 });
 
-$('#lights').click(function() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-});
-
 $.getJSON("data/data.json", function(json) {
     rng = getRandomInt(0, json.length - 1, json)
-    console.log(rng)
     $(".apt-name").text(json[rng].name);
     printNames(json, rng);
     printDesc(json, rng);
@@ -24,8 +18,6 @@ function getRandomInt(min, max, json) {
     max = Math.floor(max);
     int = Math.floor(Math.random() * (max - min + 1)) + min;
     return int;
-
-
 }
 
 function printMultiple(dict) {
@@ -60,7 +52,6 @@ function printNames(json, int) {
 };
 
 function printDesc(json, int) {
-    console.log("gets here?")
     if (json[int].description) {
         split = json[rng].description.split(".")
         if (split[1]) {
